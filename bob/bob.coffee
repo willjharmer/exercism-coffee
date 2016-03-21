@@ -2,7 +2,7 @@ String::endsWith   ?= (s) -> s is '' or @[-s.length..] is s
 String::isUppercase   = -> (/^[^a-z]*$/).test(@)
 String::hasWords       = -> (/[A-Z]/).test(@)
 String::isSilence       = -> (/^\s*$/).test(@)
-  
+
 class Bob
   hey: (cmd) ->
     switch
